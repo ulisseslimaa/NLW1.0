@@ -1,0 +1,101 @@
+#page-home {
+    height: 120vh;
+    /* height: 130vh; */
+    background: url('../assets/home-background.svg') no-repeat;
+    background-position: 35vw bottom; /*110px* or bottom/ 38vw 15vh;
+    /* background-size: 50%;*/
+}
+
+#page-home .content{
+    height: 100%;
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#page-home header {
+    display: flex;
+    margin-top: 48px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-home header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+} 
+
+#page-home header a span {
+    display: flex;
+    background-image: url('../assets/log-in.svg');
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main {
+    max-width: 560px;
+    /* height: 600px; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1 {
+    font-size: 54px;
+}
+
+#page-home main p {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+#page-home main a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    transition: 400ms ;
+
+}
+
+#page-home main a:hover {
+    background-color: #2fb86e;
+}
+
+#page-home main a span {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    background-color: rgba(0,0,0,0.08);
+}
+
+#page-home main a span::after {
+    content: "";
+    background-image: url('../assets/search.svg');
+
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main a strong {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
